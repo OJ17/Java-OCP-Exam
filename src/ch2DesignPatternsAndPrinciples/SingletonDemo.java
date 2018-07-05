@@ -11,11 +11,13 @@ public class SingletonDemo {
 
     private int TotalClasses;
 
+    // by marking the class private, it is implicitly final
     private SingletonDemo() {
 
     }
 
     public SingletonDemo getInstance() {
+        // lazy loading, but not thread safe
         if (instance == null) {
             instance = new SingletonDemo();
         }
