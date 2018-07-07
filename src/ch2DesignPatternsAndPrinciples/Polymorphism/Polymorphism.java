@@ -1,4 +1,4 @@
-package ch1AdvancedClassDesign.interfaces;
+package ch2DesignPatternsAndPrinciples.Polymorphism;
 
 public class Polymorphism {
 

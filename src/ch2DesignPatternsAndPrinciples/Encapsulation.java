@@ -26,6 +26,9 @@ public class Encapsulation {
         return name;
     }
 
+    // Even encapsulation like this has benefits
+    // because it enables developers to rewrite the logic for
+    // accessing a field, without modifying external classes
     public String getNameTwo(){
         return nameTwo;
     }
