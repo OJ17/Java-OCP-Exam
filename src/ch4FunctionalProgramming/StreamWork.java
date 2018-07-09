@@ -1,3 +1,5 @@
+package ch4FunctionalProgramming;
+
 import java.util.HashMap;
 import java.util.Map;
 

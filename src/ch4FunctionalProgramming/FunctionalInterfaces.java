@@ -1,24 +1,36 @@
 package ch4FunctionalProgramming;
 
-import ch1AdvancedClassDesign.interfaces.Eagle;
-
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Predicate;
 
 public class FunctionalInterfaces {
 
-    public static void print(Eagle eagle, Predicate<Eagle> predicate){
-        if(predicate.test(eagle)){
-            System.out.println(eagle);
-        }
+
+    public FunctionalInterfaces() {
     }
 
-    // Predicate has 1 parameter,
-    // and returns a boolean
-    public static void main(String[] args){
-        print(new Eagle(), s-> s.isQuadruped());
+    public static void main(String args[]){
 
+    Predicate<String> predLambda = s -> s.endsWith("hi");
 
+    List<String> lString = new ArrayList<String>();
+    lString.add("hi");
+    lString.add("Yes");
+    lString.add("Goon");
+    lString.add("hi");
 
+    //isValid(predLambda, lString);
+
+    long count = lString.stream().count();
+    lString.stream().filter(predLambda).forEach(s -> System.out.println(s));
+    System.out.println(count);
     }
 
+    public static boolean isValid(Predicate<String> lambda, List<String> lStr){
+        boolean isVal = false;
+        lStr.forEach(s -> System.out.println(s));
+
+        return isVal;
+    }
 }

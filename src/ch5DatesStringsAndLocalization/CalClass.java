@@ -1,12 +1,11 @@
+package ch5DatesStringsAndLocalization;
+
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
-import java.util.Arrays;
-import java.util.List;
-import java.util.function.Predicate;
 
-public class calClass {
+public class CalClass {
 
     public static void main(String[] args){
         LocalDateTime ldt = LocalDateTime.of(2017,12,02,6,0,0);

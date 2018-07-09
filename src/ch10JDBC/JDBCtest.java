@@ -28,7 +28,22 @@ public class JDBCtest {
             stmt.executeUpdate("INSERT INTO animal VALUES (4, 1, 'Eddie', '2010−06−08 01:24')");
             stmt.executeUpdate("INSERT INTO animal VALUES (5, 2, 'Zoe', '2005−11−12 03:44')");
         }
-
     }
+
+    // There are four Key interfaces for JDBC
+    // The below are provided in the jdk
+    // Driver, Connection, Statement, and ResultSet
+
+    // 1. Driver gets a connection to the database
+
+    // 2. Connection knows how to communicate with the DB
+
+    // 3. statement Knows how to run the SQL
+
+    // 4. Knows what is returned by the SELECT query
+
+    // each one is linked to a vendor specific implementation
+    // i.e. MySQLDriver, MySQLConnection, MySQLStatement, etc.
+
 
 }
