@@ -1,4 +1,4 @@
-package main.java.ch4FunctionalProgramming;
+package ch4FunctionalProgramming;
 
 import java.util.HashMap;
 import java.util.Map;

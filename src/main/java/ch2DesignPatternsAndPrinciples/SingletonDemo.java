@@ -1,4 +1,4 @@
-package main.java.ch2DesignPatternsAndPrinciples;
+package ch2DesignPatternsAndPrinciples;
 
 // A singleton is a class that you can only make one instance of
 // A private constructor is required

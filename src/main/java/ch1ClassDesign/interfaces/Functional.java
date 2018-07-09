@@ -1,4 +1,4 @@
-package main.java.interfaces;
+package ch1ClassDesign.interfaces;
 
 // Here is a simple functional interface that uses generic type T
 // It is similar to the consumer interface in java.util.function.Consumer

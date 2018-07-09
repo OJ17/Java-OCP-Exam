@@ -1,4 +1,4 @@
-package main.java.interfaces;
+package ch1ClassDesign.interfaces;
 
 public interface Fly {
     public int getWingSpan() throws Exception;

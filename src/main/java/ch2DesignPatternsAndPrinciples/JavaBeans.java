@@ -1,4 +1,4 @@
-package main.java.ch2DesignPatternsAndPrinciples;
+package ch2DesignPatternsAndPrinciples;
 
 // JavaBeans is an encapsulation standard in Java
 // it is a naming convention for getters and setters, combined

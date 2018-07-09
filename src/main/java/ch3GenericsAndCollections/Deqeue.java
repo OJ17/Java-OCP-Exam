@@ -1,4 +1,4 @@
-package main.java.ch3GenericsAndCollections;
+package ch3GenericsAndCollections;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

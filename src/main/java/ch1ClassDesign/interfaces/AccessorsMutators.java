@@ -1,4 +1,4 @@
-package main.java.interfaces;
+package ch1ClassDesign.interfaces;
 
 public class AccessorsMutators {
     private boolean isMutable;

@@ -1,4 +1,4 @@
-package main.java.ch10JDBC;
+package ch10JDBC;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -30,7 +30,7 @@ public class JDBCtest {
         }
     }
 
-    // There are four Key interfaces for JDBC
+    // There are four Key ch1ClassDesign.interfaces for JDBC
     // The below are provided in the jdk
     // Driver, Connection, Statement, and ResultSet
 

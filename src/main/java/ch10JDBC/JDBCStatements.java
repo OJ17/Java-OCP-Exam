@@ -1,4 +1,4 @@
-package main.java.ch10JDBC;
+package ch10JDBC;
 
 import java.sql.*;
 

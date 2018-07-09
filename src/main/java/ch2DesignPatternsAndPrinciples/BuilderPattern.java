@@ -1,4 +1,4 @@
-package main.java.ch2DesignPatternsAndPrinciples;
+package ch2DesignPatternsAndPrinciples;
 
 import java.util.List;
 

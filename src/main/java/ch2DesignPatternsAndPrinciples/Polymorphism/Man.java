@@ -1,4 +1,4 @@
-package main.java.ch2DesignPatternsAndPrinciples.Polymorphism;
+package ch2DesignPatternsAndPrinciples.Polymorphism;
 
 public class Man {
     public boolean hasEyes(){

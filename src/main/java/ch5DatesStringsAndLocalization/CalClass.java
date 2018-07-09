@@ -1,4 +1,4 @@
-package main.java.ch5DatesStringsAndLocalization;
+package ch5DatesStringsAndLocalization;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

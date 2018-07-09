@@ -1,4 +1,4 @@
-package main.java.interfaces;
+package ch1ClassDesign.interfaces;
 
 // 1. an interface cannot extend a class, only another interface
 public interface Run extends Walk {

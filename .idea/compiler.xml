@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="com-halogeninc-ocpwork" />
+        <module name="Java-OCP-Exam" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="com-halogeninc-ocpwork" target="1.7" />
+      <module name="Java-OCP-Exam" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

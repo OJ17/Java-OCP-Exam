@@ -1,11 +1,11 @@
-package main.java.interfaces;
+package ch1ClassDesign.interfaces;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
 //1. a class cannot extend an interface. It must implement it.
-// you can implement multiple interfaces at once
+// you can implement multiple ch1ClassDesign.interfaces at once
 public class Eagle implements Fly,Run,Walk{
 
     // There are rules on how an interface can be implemented

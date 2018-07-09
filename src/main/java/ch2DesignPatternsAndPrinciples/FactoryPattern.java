@@ -1,4 +1,4 @@
-package main.java.ch2DesignPatternsAndPrinciples;
+package ch2DesignPatternsAndPrinciples;
 
 
 // Factory pattern. This is another creational design pattern

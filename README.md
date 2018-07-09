@@ -6,7 +6,7 @@ It covers advanced Java topics, such as:
 
 java.nio API
 Concurrency
-Stream API / Functional interfaces
+Stream API / Functional ch1ClassDesign.interfaces
 JDBC (Java database connectivty)
 Advanced class design
 Java IO

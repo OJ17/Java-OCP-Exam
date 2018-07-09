@@ -1,4 +1,4 @@
-package main.java.ch3GenericsAndCollections;
+package ch3GenericsAndCollections;
 
 public class Generics {
 

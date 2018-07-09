@@ -1,6 +1,6 @@
-package main.java.interfaces;
+package ch1ClassDesign.interfaces;
 
-// interfaces cannot be marked final
+// ch1ClassDesign.interfaces cannot be marked final
 // Intefaces cannot be instantiated directly
 public interface Walk {
     boolean isQuadruped();
