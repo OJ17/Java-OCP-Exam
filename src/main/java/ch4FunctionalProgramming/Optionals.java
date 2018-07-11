@@ -28,6 +28,8 @@ public class Optionals {
             System.out.println(opt.get());
         }
         Supplier<Double> sD = () -> 3.14;
+        // similar to or else, except it uses a supplier
+        // to generate the return type
         System.out.println(opt.orElseGet(sD));
         // ofNullable, if values sD is null, then
         // return Optioanl.empty()
