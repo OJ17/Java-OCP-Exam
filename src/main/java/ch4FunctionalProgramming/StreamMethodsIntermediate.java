@@ -28,7 +28,9 @@ public class StreamMethodsIntermediate {
         Stream<Integer> skipStream = Stream.of(1,2,3,4,5,6,6,7);
         limitStream.limit(3).skip(2).forEach(s -> System.out.print("limit skip: " + s));
 
-        
+        Stream<String> mapStream = Stream.of("fear","Wolf","Venom");
+        mapStream.map(String::length).forEach(System.out::print);
+
 
     }
 }
