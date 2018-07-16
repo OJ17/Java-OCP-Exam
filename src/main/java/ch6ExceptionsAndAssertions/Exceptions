@@ -1,0 +1,12 @@
+java.lang.Object
+
+java.lang.Throwable
+
+java.lang.Exception          java.lang.Error
+
+java.lang.RuntimeException
+
+-
+
+Exceptions on OCP
+
