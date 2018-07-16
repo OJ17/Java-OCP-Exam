@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Zoo_en">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/src/main/resources/Zoo_en.properties" />
+      <root url="file://$PROJECT_DIR$/src/main/resources/Zoo_fr.properties" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
