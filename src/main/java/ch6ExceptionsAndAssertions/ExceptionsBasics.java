@@ -1,8 +1,6 @@
 package ch6ExceptionsAndAssertions;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -12,7 +10,7 @@ import java.time.format.DateTimeParseException;
 
 public class ExceptionsBasics {
 
-    public static void main(String[]args) {
+    public static void main(String[]args) throws IOException{
         try {
             Path path = Paths.get("FearWolfPath.txt");
             String text = new String(Files.readAllBytes(path));
@@ -34,6 +32,22 @@ public class ExceptionsBasics {
         // Try with resources Demo
         // Everything in the resources block should implement the AutoCloseable
         // Interface.
+        // this has the try(){} syntax. An explicit catch or finally are not required
+        Path path1 = Paths.get("/usr/lib");
+        Path path2 = Paths.get("/usr/lib/ok");
+        try(BufferedReader r = Files.newBufferedReader(path1);
+            BufferedWriter w = Files.newBufferedWriter(path2)){
+            // when closing resources they are closed in the reverse order
+            // that they were instantiated in
+        }
+
+        // in order to be used in the () section of a try \w resources
+        // it is required to use the AutoCloseable interface
+        // public void close() throws Exception;
+
+
+
+
 
     }
 
