@@ -13,10 +13,7 @@ public class JDBCStatements {
             while (rs.next()) {
                 System.out.println(rs.getString(1));
             }
-
         }
-
-
     }
 
 }

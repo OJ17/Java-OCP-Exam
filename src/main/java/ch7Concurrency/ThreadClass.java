@@ -14,12 +14,18 @@ public class ThreadClass extends Thread {
         // constructor
     }
 
+    // An example of using four different user defined threads
+    // this is not the preferred way of working with multi-threaded applications
+    // in Java
+    // The outcome of the below code is uncertain as there is no guarantee threads will
+    // be run in the order they are created
     public static void main(String[] args) {
         (new ThreadClass()).start();
         (new Thread(new RunnableBasics())).start();
         (new ThreadClass()).start();
         (new Thread(new RunnableBasics())).start();
         System.out.println("end");
+
     }
 
 }
