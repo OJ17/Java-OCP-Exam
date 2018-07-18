@@ -27,20 +27,16 @@ public class PrimitiveStreams {
 
 
         // LongStream example
-        LongStream ls = LongStream.of(1L,2L,3L);
+        LongStream ls = LongStream.of(1L, 2L, 3L);
 
 
         // DoubleStream example
         DoubleStream ds = DoubleStream.empty();
-        DoubleStream ds1 = DoubleStream.of(3.14,1.0,1.20);
+        DoubleStream ds1 = DoubleStream.of(3.14, 1.0, 1.20);
         // generates a stream of random doubles
-        DoubleStream random  = DoubleStream.generate(Math::random);
+        DoubleStream random = DoubleStream.generate(Math::random);
         // generates a stre
-        DoubleStream fractions = DoubleStream.iterate(.5,d-> d / 2);
-
-
-
-
+        DoubleStream fractions = DoubleStream.iterate(.5, d -> d / 2);
 
 
     }

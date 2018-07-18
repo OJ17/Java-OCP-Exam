@@ -5,30 +5,30 @@ public class AccessorsMutators {
     private String thisIsTheBass;
     private int totalHoursSpent;
 
-    public boolean getIsMutable(){
+    public boolean getIsMutable() {
         return isMutable;
     }
 
-    public boolean setIsMutable(boolean isM){
+    public boolean setIsMutable(boolean isM) {
         this.isMutable = isM;
         return this.isMutable;
     }
 
-    public String getThisIsTheBass(){
+    public String getThisIsTheBass() {
         return this.thisIsTheBass;
     }
 
-    public String setThisIsTheBase(String baseString){
+    public String setThisIsTheBase(String baseString) {
         this.thisIsTheBass = baseString;
         return this.thisIsTheBass;
     }
 
-    public int getTotalHoursSpent(){
+    public int getTotalHoursSpent() {
         return this.totalHoursSpent;
     }
 
-    public int setTotalHoursSpent(int totalHoursSpent){
-        if(totalHoursSpent < 1){
+    public int setTotalHoursSpent(int totalHoursSpent) {
+        if (totalHoursSpent < 1) {
             return 0;
         }
         this.totalHoursSpent = totalHoursSpent;

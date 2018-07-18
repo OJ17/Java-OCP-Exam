@@ -8,10 +8,10 @@ import java.util.List;
 // it is similar to a private final variable, but read access is public
 public final class ImmutableObjectPattern {
     // all fields should be private and final
-    private final List<String>  immutableObjects;
+    private final List<String> immutableObjects;
 
-    public ImmutableObjectPattern(List<String> immutableObjects){
-        if(immutableObjects == null){
+    public ImmutableObjectPattern(List<String> immutableObjects) {
+        if (immutableObjects == null) {
             throw new RuntimeException("Immutable objects required");
         }
         this.immutableObjects = new ArrayList<>(immutableObjects);
@@ -20,11 +20,11 @@ public final class ImmutableObjectPattern {
 
     // access to the list itself is restricted behind getters
     // that don't give a reference to the list itself
-    public int getImmutableObjectsCount(){
+    public int getImmutableObjectsCount() {
         return immutableObjects.size();
     }
 
-    public String getImmutableObject(int index){
+    public String getImmutableObject(int index) {
         return immutableObjects.get(index);
     }
 

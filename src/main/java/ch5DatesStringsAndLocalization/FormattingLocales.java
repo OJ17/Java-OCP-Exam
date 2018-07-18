@@ -19,7 +19,7 @@ public class FormattingLocales {
         int lostThoughtsPerMonth = lostThoughtsPerYear / 12;
         NumberFormat us = NumberFormat.getInstance(Locale.US);
         System.out.println(us.format(lostThoughtsPerMonth));
-        NumberFormat g  = NumberFormat.getInstance(Locale.GERMANY);
+        NumberFormat g = NumberFormat.getInstance(Locale.GERMANY);
         System.out.println(g.format(lostThoughtsPerMonth));
         NumberFormat ca = NumberFormat.getInstance(Locale.CANADA_FRENCH);
         System.out.println(ca.format(lostThoughtsPerMonth));
@@ -31,7 +31,7 @@ public class FormattingLocales {
 
         // parse method
         NumberFormat en = NumberFormat.getInstance(Locale.US);
-        NumberFormat fr  = NumberFormat.getInstance(Locale.FRANCE);
+        NumberFormat fr = NumberFormat.getInstance(Locale.FRANCE);
         String s = "40.45";
         System.out.println();
         // the output of this depends on the country in the US
@@ -42,9 +42,9 @@ public class FormattingLocales {
         System.out.println();
         // Formatting dates and times
         // ISO is a standard for dates
-        LocalDate ld = LocalDate.of(2020,Month.JANUARY,20);
-        LocalTime time = LocalTime.of(11,12,34);
-        LocalDateTime dateTime = LocalDateTime.of(ld,time);
+        LocalDate ld = LocalDate.of(2020, Month.JANUARY, 20);
+        LocalTime time = LocalTime.of(11, 12, 34);
+        LocalDateTime dateTime = LocalDateTime.of(ld, time);
         System.out.println(ld.format(DateTimeFormatter.ISO_LOCAL_DATE));
         System.out.println(time.format(DateTimeFormatter.ISO_LOCAL_TIME));
         System.out.println(dateTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
@@ -55,9 +55,9 @@ public class FormattingLocales {
         System.out.println();
         System.out.println("mediums");
 
-        LocalDate ldate = LocalDate.of(2020,Month.JANUARY,20);
-        LocalTime ltime = LocalTime.of(11,12,34);
-        LocalDateTime ldatetime = LocalDateTime.of(ldate,ltime);
+        LocalDate ldate = LocalDate.of(2020, Month.JANUARY, 20);
+        LocalTime ltime = LocalTime.of(11, 12, 34);
+        LocalDateTime ldatetime = LocalDateTime.of(ldate, ltime);
         DateTimeFormatter dtff = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM);
         System.out.println(dtff.format(ldatetime));
         System.out.println();
@@ -65,7 +65,7 @@ public class FormattingLocales {
         // You can also create your own pattern for formatting dates
         DateTimeFormatter f = DateTimeFormatter.ofPattern("MMMM dd, yyyy, hh:mm");
         System.out.println(dateTime.format(f));
-        
+
 
     }
 }

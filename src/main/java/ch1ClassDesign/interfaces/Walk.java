@@ -4,6 +4,7 @@ package ch1ClassDesign.interfaces;
 // Intefaces cannot be instantiated directly
 public interface Walk {
     boolean isQuadruped();
+
     abstract double getMaxSpeed();
 
 }

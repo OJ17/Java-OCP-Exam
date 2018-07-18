@@ -11,26 +11,26 @@ public class BuilderPattern {
     private int age;
     private List<String> favouritePlaces;
 
-    public BuilderPattern(String name,int age,List<String> favouritePlaces){
+    public BuilderPattern(String name, int age, List<String> favouritePlaces) {
 
     }
 
-    public BuilderPattern setAge(int age){
+    public BuilderPattern setAge(int age) {
         this.age = age;
         return this;
     }
 
-    public BuilderPattern setName(String name){
+    public BuilderPattern setName(String name) {
         this.name = name;
         return this;
     }
 
-    public BuilderPattern setFavouritePlace(List<String> favouritePlaces){
+    public BuilderPattern setFavouritePlace(List<String> favouritePlaces) {
         this.favouritePlaces = favouritePlaces;
         return this;
     }
 
-    public BuilderPattern build(){
-        return new BuilderPattern(name,age,favouritePlaces);
+    public BuilderPattern build() {
+        return new BuilderPattern(name, age, favouritePlaces);
     }
 }

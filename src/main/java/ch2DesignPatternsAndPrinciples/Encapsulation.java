@@ -13,14 +13,15 @@ public class Encapsulation {
         this.name = name;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
+
     // this check is part of the value of encapsulation
     // because it ensures that the data is in some way regulated
     // compared to just making name public
-    public String setName(String name){
-        if(name.length() > 3){
+    public String setName(String name) {
+        if (name.length() > 3) {
             this.name = name;
         }
         return name;
@@ -29,17 +30,17 @@ public class Encapsulation {
     // Even encapsulation like this has benefits
     // because it enables developers to rewrite the logic for
     // accessing a field, without modifying external classes
-    public String getNameTwo(){
+    public String getNameTwo() {
         return nameTwo;
     }
 
-    public void setNameTwo(String zwei){
-        if(zwei != null) {
+    public void setNameTwo(String zwei) {
+        if (zwei != null) {
             this.nameTwo = zwei;
         }
     }
 
-    public int setAge(){
+    public int setAge() {
         return age;
     }
 

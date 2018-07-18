@@ -5,11 +5,13 @@ import java.util.function.BiFunction;
 public class LambdaSyntax {
 
 
-
-// it is possible to declare a variable in a lambda provided
+    // it is possible to declare a variable in a lambda provided
 // that it is not already defined
-BiFunction<String,String,String> ps =
-        (a, b) -> {int c = 0; return "sup";};
+    BiFunction<String, String, String> ps =
+            (a, b) -> {
+                int c = 0;
+                return "sup";
+            };
 
 }
 

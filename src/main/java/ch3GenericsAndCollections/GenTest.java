@@ -5,8 +5,8 @@ import java.util.List;
 
 public class GenTest {
 
-    public static void main(String[] args){
-        List<String> names = Arrays.asList("Peter","Paul","Pascasl");
+    public static void main(String[] args) {
+        List<String> names = Arrays.asList("Peter", "Paul", "Pascasl");
 
     }
 }

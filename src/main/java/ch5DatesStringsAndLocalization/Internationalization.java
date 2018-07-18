@@ -21,20 +21,20 @@ public class Internationalization {
                 .setLanguage("en")
                 .build();
 
-       // System.out.println(Locale.getDefault());
-       // Locale locale = new Locale("fr");
-       // Locale.setDefault(locale);
-       // System.out.println(Locale.getDefault());
+        // System.out.println(Locale.getDefault());
+        // Locale locale = new Locale("fr");
+        // Locale.setDefault(locale);
+        // System.out.println(Locale.getDefault());
 
-        Locale us = new Locale("en","US");
-        Locale france = new Locale("fr","FR");
+        Locale us = new Locale("en", "US");
+        Locale france = new Locale("fr", "FR");
 
 
         printProperties(us);
         System.out.println();
         printProperties(france);
 
-        ResourceBundle rbx = ResourceBundle.getBundle("Zoo",us);
+        ResourceBundle rbx = ResourceBundle.getBundle("Zoo", us);
         Set<String> keys = rbx.keySet();
         System.out.println();
         keys.stream().map(k -> k + " " + rbx.getString(k))
@@ -43,10 +43,10 @@ public class Internationalization {
 
         // working with a properties file
         Properties props = new Properties();
-        rbx.keySet().stream().forEach(k -> props.put(k,rbx.getString(k)));
+        rbx.keySet().stream().forEach(k -> props.put(k, rbx.getString(k)));
         System.out.println();
         System.out.println(props.getProperty("Not really a prop"));
-        System.out.println(props.getProperty("not a real prop","get this instead"));
+        System.out.println(props.getProperty("not a real prop", "get this instead"));
 
 
         // Resource bundles
@@ -56,12 +56,10 @@ public class Internationalization {
         // first one uses default locale, second uses 2nd parameter
 
 
-
-
     }
 
     public static void printProperties(Locale locale) {
-        ResourceBundle rb = ResourceBundle.getBundle("Zoo",locale);
+        ResourceBundle rb = ResourceBundle.getBundle("Zoo", locale);
         System.out.println(rb.getString("hello"));
         System.out.println(rb.getString("open"));
     }

@@ -10,13 +10,14 @@ public interface Fly {
     // an example of a default method. A default method does not require
     // the implementing class to write an implementation. If one is not
     // written the compiler will use this by default
-    public default void land(){
+    public default void land() {
         System.out.println("Animal is landing");
     }
 
-    public static double calculateSpeed(float distance, double time){
+    public static double calculateSpeed(float distance, double time) {
         return distance / time;
     }
+
     // This method turns to public abstract...
     void toTheStars();
 

@@ -14,7 +14,7 @@ public class Optionals {
             return Optional.empty();
         }
         int sum = 0;
-        for(int x : intarr) sum += x;
+        for (int x : intarr) sum += x;
         return Optional.of((double) sum / intarr.length);
     }
 
@@ -24,7 +24,7 @@ public class Optionals {
 
     public static void main(String[] args) throws Throwable {
         Optional<Double> opt = getDouble(90, 100);
-        if(opt.isPresent()){
+        if (opt.isPresent()) {
             System.out.println(opt.get());
         }
         Supplier<Double> sD = () -> 3.14;

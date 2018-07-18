@@ -1,11 +1,13 @@
 package ch2DesignPatternsAndPrinciples.Polymorphism;
 
-public class Spaceman extends Man implements LivesInSpace{
+public class Spaceman extends Man implements LivesInSpace {
 
     int age;
-    private int getAge(){
+
+    private int getAge() {
         return age;
     }
+
     // override annotation is good practice,
     // as it ensures that the method is overridden from the superclass
     @Override
@@ -13,7 +15,7 @@ public class Spaceman extends Man implements LivesInSpace{
         return true;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         // Here is an example of what polymorphism allows
         // you can see here the reference types are all different

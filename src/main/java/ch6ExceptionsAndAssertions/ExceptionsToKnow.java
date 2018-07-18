@@ -5,6 +5,7 @@ import java.util.List;
 public class ExceptionsToKnow {
 
     public int eCounter = 7;
+
     public static void main(String[] args) {
 
         // OCP Exceptions:
@@ -34,10 +35,7 @@ public class ExceptionsToKnow {
         // java.lang.UnsupportedOperationException
 
 
-
-
     }
-
 
 
     public static void nPE(ExceptionsToKnow e) {
@@ -45,8 +43,7 @@ public class ExceptionsToKnow {
     }
 
 
-
-    public static void OCAExceptions(){
+    public static void OCAExceptions() {
 
         //ArihtmeticException - divide by zero exception
         int x = 3 / 0;

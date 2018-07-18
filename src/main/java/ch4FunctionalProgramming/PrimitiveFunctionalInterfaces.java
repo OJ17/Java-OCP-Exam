@@ -31,7 +31,7 @@ public class PrimitiveFunctionalInterfaces {
         // IntFunction<T> converts int to <T>
         IntFunction<String> intF = x -> Integer.toString(x);
         IntUnaryOperator iUO = s -> s;
-        IntBinaryOperator iBO = (s,f) -> s;
+        IntBinaryOperator iBO = (s, f) -> s;
         // ToIntFunction<T> converts <T> to int
         ToIntFunction<String> tIF = x -> Integer.parseInt(x);
         IntToLongFunction iTLF = x -> (long) x;
@@ -41,22 +41,22 @@ public class PrimitiveFunctionalInterfaces {
         // long primitive interface
         LongFunction<Integer> lF = l -> (int) l;
         LongUnaryOperator lUO = s -> s;
-        LongBinaryOperator lBO = (l,f) -> l;
+        LongBinaryOperator lBO = (l, f) -> l;
         // ToLongFunction converts <T> to long
         ToLongFunction<String> tLF = l -> Long.parseLong(l);
         LongToIntFunction lTIF = s -> (int) s;
         LongToDoubleFunction lTDF = s -> (double) s;
 
-        LongStream lStream = LongStream.of(11L,22L);
-        Stream<String> stringStream = Stream.of("11","12");
+        LongStream lStream = LongStream.of(11L, 22L);
+        Stream<String> stringStream = Stream.of("11", "12");
         System.out.println("Long to double function: " + lTDF.applyAsDouble(2L));
-        System.out.println("Long to Int Function: " +  lTIF.applyAsInt(2L));
+        System.out.println("Long to Int Function: " + lTIF.applyAsInt(2L));
         System.out.println("To Long Function: " + tLF.applyAsLong("3"));
 
         // this has two input parameters of object and double
-        ObjDoubleConsumer<String> oTDF = (o,d)-> System.out.println("obj1Double: null");
-        ObjIntConsumer<String> oIT = (o,i) -> System.out.println("obj2int: null");
-        ObjLongConsumer<String> oLT = (o,l) -> System.out.println("obj2l: null");
+        ObjDoubleConsumer<String> oTDF = (o, d) -> System.out.println("obj1Double: null");
+        ObjIntConsumer<String> oIT = (o, i) -> System.out.println("obj2int: null");
+        ObjLongConsumer<String> oLT = (o, l) -> System.out.println("obj2l: null");
 
 
     }

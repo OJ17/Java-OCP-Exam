@@ -8,11 +8,11 @@ public class AssertionsDemo {
         assert false;
 
         // assertions are disabled by default
-        assert 1 > 2: "while 1 > 2";
+        assert 1 > 2 : "while 1 > 2";
 
         // if an assertion is false, and -ea
         // then it throws an AssertionError
-        if(!true) throw new AssertionError();
+        if (!true) throw new AssertionError();
 
 
         // enabling assertion from command line

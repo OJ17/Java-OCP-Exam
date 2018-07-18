@@ -10,18 +10,18 @@ import java.time.format.DateTimeParseException;
 
 public class ExceptionsBasics {
 
-    public static void main(String[]args) throws IOException{
+    public static void main(String[] args) throws IOException {
         try {
             Path path = Paths.get("FearWolfPath.txt");
             String text = new String(Files.readAllBytes(path));
             LocalDate date = LocalDate.parse(text);
             // below is the Syntax for the multi-catch block
             // it is intendend to be used with unrelated exception
-        } catch (DateTimeParseException | IOException e){
+        } catch (DateTimeParseException | IOException e) {
             e.printStackTrace();
             // it is also illegal to redeclare an exception (e), in a
             // multi-catch block
-           // e = new RuntimeException();
+            // e = new RuntimeException();
         }
         //if you use a related on then it will not compile e.g.
         //catch(FileNotFoundException | IOException x){
@@ -35,8 +35,8 @@ public class ExceptionsBasics {
         // this has the try(){} syntax. An explicit catch or finally are not required
         Path path1 = Paths.get("/usr/lib");
         Path path2 = Paths.get("/usr/lib/ok");
-        try(BufferedReader r = Files.newBufferedReader(path1);
-            BufferedWriter w = Files.newBufferedWriter(path2)){
+        try (BufferedReader r = Files.newBufferedReader(path1);
+             BufferedWriter w = Files.newBufferedWriter(path2)) {
             // when closing resources they are closed in the reverse order
             // that they were instantiated in
         }
@@ -44,9 +44,6 @@ public class ExceptionsBasics {
         // in order to be used in the () section of a try \w resources
         // it is required to use the AutoCloseable interface
         // public void close() throws Exception;
-
-
-
 
 
     }
@@ -57,29 +54,6 @@ public class ExceptionsBasics {
         throw new UnsupportedOperationException();
     }
 
-
-
-}
-
-// an example of a custom exception
-class CustomException extends Exception {
-
-    public CustomException() {
-        super();
-    }
-
-    public CustomException(Exception e){
-        super(e);
-    }
-
-    public CustomException(String message) {
-        super(message);
-    }
-
-}
-
-// this is another more specifc custom exception
-class FearWolfLivesForever extends FileNotFoundException {
 
 }
 
