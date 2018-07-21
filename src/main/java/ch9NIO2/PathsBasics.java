@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.file.FileSystems;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -131,8 +132,14 @@ public class PathsBasics {
         System.out.println("Normalized path2N: " + path2N.normalize());
 
         // toRealPath() - check a file exists with this
-        System.out.println("Does path exist: " + path1N.toRealPath());
+        // this will throw an exception of the path doesn't exist
+        // System.out.println("Does path exist: " + path1N.toRealPath());
         Path realPath = Paths.get("/users/dmt/Documents/JavaOCP/IOdemo.txt");
+        System.out.println(realPath.toRealPath());
+        // this can also be written as
+        boolean exists = Files.exists(realPath);
+        System.out.println("does it exist: " + exists);
+
     }
 
 
