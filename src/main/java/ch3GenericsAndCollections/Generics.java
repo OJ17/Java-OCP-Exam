@@ -18,10 +18,29 @@ public class Generics {
     List<String> lString1 = new ArrayList<>();
 
 
+    // this <T> is a generic method, it is often used on static methods
+    // but can be used on non-static methods also
+    public static <T> T genMethod(T t) {
+        if(t instanceof ComparableDemo){
+            t = (T) new ComparableDemo("nova",7,13);
+        }
+        return t;
+    }
+
+
+    public static void main(String[] args) {
+
+        ComparableDemo cd = new ComparableDemo("name",
+                1,40);
+        ComparableDemo zwei = genMethod(cd);
+
+        System.out.println("Pre method is: " + cd);
+
+        System.out.println("post method is: " + zwei);
 
 
 
-
+    }
 
 
 }
